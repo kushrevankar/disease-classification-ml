@@ -1,6 +1,6 @@
-# Hyperdimensional Computing for Disease Classification
+# Prototype Based Computing Classifier for Disease Classification
 
-This repository contains the implementation of a Hyperdimensional Computing (HDC)-based classifier for multi-class disease classification using symptom data. The project leverages high-dimensional binary vectors for efficient and robust pattern recognition, suitable for resource-constrained environments like edge devices.
+This repository contains the implementation of a Hyperdimensional Computing (HDC)-inspired classifier for multi-class disease classification using symptom data. The project leverages high-dimensional binary vectors for efficient and robust pattern recognition, suitable for resource-constrained environments like edge devices.
 
 ## Table of Contents
 - [Overview](#overview)
@@ -72,38 +72,6 @@ for test_sample in test_data:
     predictions.append(predicted_class)
 ```
 
-## Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/hdc-disease-classification.git
-   cd hdc-disease-classification
-   ```
-
-2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. Ensure Python 3.8+ and PyTorch are installed. The code was tested in a Google Colab environment with a T4 GPU.
-
-## Usage
-1. **Prepare the Dataset**:
-   - Download the dataset from [Kaggle](https://www.kaggle.com/datasets/dhivyeshrk/diseases-and-symptoms-dataset).
-   - Place it in the `data/` directory and preprocess it using the provided script:
-     ```bash
-     python preprocess.py --input data/diseases_symptoms.csv --output data/processed_dataset.csv
-     ```
-
-2. **Train the Model**:
-   ```bash
-   python train.py --dataset data/processed_dataset.csv --dim 1000
-   ```
-
-3. **Evaluate the Model**:
-   ```bash
-   python evaluate.py --model models/hdc_classifier.pth --test data/processed_dataset.csv
-   ```
-
 ## Results
 The HDC classifier achieved the following performance on the test set:
 - **Accuracy**: 87.16%
@@ -140,9 +108,6 @@ The HDC classifier achieved the following performance on the test set:
 5. Q. Wu et al., “HDC-IM: Hyperdimensional Computing In-Memory Architecture for Low-Power Signal Processing,” *IEEE International Symposium on Circuits and Systems (ISCAS)*, pp. 1–5, 2018.
 6. Dhivyesh R. K., “Diseases and Symptoms Dataset,” *Kaggle*, 2023. [Online]. Available: https://www.kaggle.com/datasets/dhivyeshrk/diseases-and-symptoms-dataset
 7. A. Esteva et al., “Dermatologist-Level Classification of Skin Cancer with Deep Neural Networks,” *Nature*, vol. 542, no. 7639, pp. 115–118, 2017.
-
-## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## Contact
 For questions or collaboration, reach out to:
